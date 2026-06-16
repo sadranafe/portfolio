@@ -1,3 +1,5 @@
+import Footer from "./components/shared/Footer";
+import Navbar from "./components/shared/Navbar";
 import { comfortaa, syne } from "./fonts";
 import "./globals.css";
 
@@ -9,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang = "en" className = {`${syne.variable} ${comfortaa.variable} h-full antialiased`}>
-      <body className = "">{children}</body>
+      <body className = "bg-neutral-50 text-xs">
+        <Navbar/>
+          {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
