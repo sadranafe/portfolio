@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ format = 'default' }) => {
     const [dark , setDark] = useState(false);
 
     useEffect(() => {
@@ -25,8 +25,19 @@ const ThemeToggle = () => {
     
     return (
         <>
-            <button onClick = {toggleTheme} className = 'dark:hover:bg-neutral-700 outline-none rounded-lg cursor-pointer hover:bg-neutral-100 transition-all px-4 py-2'>
-                { dark ? '☀️ Light' : '🌙 Dark' }
+            <button onClick = {toggleTheme} className = {`${format !== 'default' ? 'dark:border-neutral-700 border-neutral-300 px-2 rounded-full' : 'px-3 border-transparent'} dark:hover:bg-neutral-700 outline-none rounded-lg cursor-pointer border hover:bg-neutral-100 transition-all py-2`}>
+                {
+                    format === 'default' ? 
+                    <p>
+                        { dark ? '☀️ Light' : '🌙 Dark' }
+                    </p> 
+                    : 
+                    <p>
+                        { dark ? '☀️' : '🌙' }
+                    </p>
+                }
+
+                
             </button>
         </>
     );
