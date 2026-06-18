@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import ThemeToggle from "@/app/ui/ThemeToggle";
+import ThemeToggle from "@/app/components/ui/ThemeToggle";
 
 const Navbar = () => {
     const [sidebar , setSidebar] = useState(false)
