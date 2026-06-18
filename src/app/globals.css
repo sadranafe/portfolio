@@ -14,3 +14,10 @@ body {
 *{
     user-select: none;
 }
+
+
+@media (max-width : 500px) {
+    .hero-title{
+        font-size: clamp(30px, 17.2px + 8.5vw, 60px);
+    }
+}
