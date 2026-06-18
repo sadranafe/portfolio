@@ -15,6 +15,11 @@ body {
     user-select: none;
 }
 
+::-webkit-scrollbar{
+    appearance: none;
+    display: none;
+}
+
 
 @media (max-width : 500px) {
     .hero-title{
