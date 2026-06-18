@@ -26,3 +26,9 @@ body {
         font-size: clamp(30px, 17.2px + 8.5vw, 60px);
     }
 }
+
+@media (max-width : 768px) {
+    .manifesto-title{
+        font-size: clamp(20px, 5.8491px + 3.1447vw, 30px);
+    }
+}
