@@ -1,3 +1,4 @@
+import Badge from "../ui/Badge";
 
 const AboutMe = () => {
     const skills = ['HMTL' , 'CSS' , 'JavaScript' ,'React' , 'Next.js' , 'TailwindCss' , 'ShadcnUI' , 'Axios' , 'REST-API' , 'React-Query' , 'Redux' , 'Git' , 'Github' , 'Figma']
@@ -17,7 +18,7 @@ const AboutMe = () => {
                     {
                         skills.map((skill , index) => {
                             return(
-                                <p key = {index} className = "border border-neutral-200 dark:border-neutral-800 dark:hover:bg-neutral-800 dark:hover:border-neutral-800 hover:border-neutral-200/50 hover:bg-neutral-200/50 font-display text-sm cursor-pointer transition-all rounded-md p-1 px-2 min-w-16 text-center">{skill}</p>
+                                <Badge key = {index} customClass = 'dark:hover:bg-neutral-800 dark:hover:border-neutral-800 hover:border-neutral-200/50 hover:bg-neutral-200/50 text-sm cursor-pointer min-w-16 text-center'>{skill}</Badge>
                             )
                         })
                     }
