@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import ThemeToggle from "@/app/components/ui/ThemeToggle";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
 const Navbar = () => {
     const [sidebar , setSidebar] = useState(false)
@@ -22,7 +22,7 @@ const Navbar = () => {
                 </div>
                 
                 <div className = "w-3/12 max-sm:w-4/12 text-end max-sm:hidden">
-                    <ThemeToggle/>
+                    <AnimatedThemeToggler className = 'hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-all p-2 rounded-md text-base cursor-pointer'/>
                 </div>
 
                 <button onClick = {() => setSidebar(!sidebar)} className = "hidden max-sm:flex z-50 flex-col gap-2">
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <Link href = '/' className = "p-2 px-3 hover:text-sky-500 dark:hover:bg-neutral-700 rounded-lg outline-none transition-all">about</Link>
                 <Link href = '/' className = "p-2 px-3 hover:text-sky-500 dark:hover:bg-neutral-700 rounded-lg outline-none transition-all">contact</Link>
 
-                <ThemeToggle format = "circle"/>
+                <AnimatedThemeToggler className = 'p-2 text-base'/>
             </div>
         </>
     );
