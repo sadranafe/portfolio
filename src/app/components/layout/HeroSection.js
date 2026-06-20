@@ -16,7 +16,7 @@ const HeroSection = () => {
                 <div className = "w-20 h-0.5 rounded-full bg-sky-500"></div>
 
                 <div className = "mt-2 flex max-[300px]:flex-wrap justify-center items-center gap-4">
-                    <Link href = '#work' className = "capitalize rounded-lg py-2.5 px-3 bg-sky-600 hover:bg-sky-700 transition-all text-white">view work</Link>
+                    <Link href = '#projects' className = "capitalize rounded-lg py-2.5 px-3 bg-sky-600 hover:bg-sky-700 transition-all text-white">view work</Link>
                     <Link href = '#contact' className = "border capitalize border-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:hover:border-neutral-700 hover:bg-neutral-200/50 transition-all p-2.5 px-3 rounded-lg text-sky-600">Get in touch</Link>
                 </div>
             </div>

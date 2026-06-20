@@ -37,7 +37,7 @@ const Projects = () => {
     ]
     return (
         <>
-            <section className = 'bg-neutral-100 dark:bg-neutral-900 p-20 max-[600px]:p-10 max-[380px]:p-5 rounded-xl'>
+            <section id = 'projects' className = 'bg-neutral-100 dark:bg-neutral-900 p-20 max-[600px]:p-10 max-[380px]:p-5 rounded-xl'>
                 <h3 className = 'text-sky-600 max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 text-sm capitalize'>featured projects</h3>
                 <h2 className = 'font-display text-3xl max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 max-[340px]:text-[25px] font-extrabold'>projects</h2>
 
