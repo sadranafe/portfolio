@@ -3,24 +3,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { AnimatedThemeToggler } from '@/components/ui/animated-theme-toggler';
-import { Home, MailIcon, Plus } from 'lucide-react';
+import { Home, MailIcon, Plus, Send } from 'lucide-react';
 
 const Dock = () => {
     const [isOpen , setIsOpen] = useState(false)
 
     return (
         <>
-            <div onClick = {() => setIsOpen(!isOpen)} className = {`fixed bottom-4 max-[300px]:bottom-2 max-[300px]:left-2 max-[300px]:translate-0 left-1/2 -translate-x-1/2 z-50 ${isOpen ? 'max-[300px]:h-52' : 'max-[300px]:h-10'} max-[300px]:overflow-hidden transition-all w-100 max-[450px]:w-fit flex max-[300px]:flex-col justify-center items-center gap-3 bg-neutral-100 border dark:border-neutral-700 dark:bg-neutral-900/70 backdrop-blur-xs rounded-xl p-2 px-3 max-[300px]:px-0`}>
-                <div className = "flex max-[450px]:hidden justify-start items-center gap-2 border-r border-neutral-300 dark:border-neutral-600 pr-5">
+            <div onClick = {() => setIsOpen(!isOpen)} className = {`fixed bottom-4 max-[320px]:bottom-2 max-[320px]:left-2 max-[320px]:translate-0 left-1/2 -translate-x-1/2 z-50 ${isOpen ? 'max-[320px]:h-62' : 'max-[320px]:h-10'} max-[320px]:overflow-hidden transition-all w-fit flex max-[320px]:flex-col justify-center items-center gap-2 bg-neutral-100 border dark:border-neutral-700 dark:bg-neutral-900/70 backdrop-blur-xs rounded-xl p-2 px-3 max-[320px]:px-0`}>
+                <div className = "flex max-[450px]:hidden justify-start items-center gap-2 border-r pr-2 border-neutral-300 dark:border-neutral-600">
                     <Image src = '/img/icon.png' alt = "sadra.dev icon" width = {25} height = {25} priority/>
                     <p>sadra.nafe</p>
                 </div>
 
-                <button onClick = {() => setIsOpen(false)} className = 'hidden max-[300px]:inline-block outline-none p-2 max-[300px]:translate-y-1.25 px-4 max-[300px]:px-3'>
+                <button onClick = {() => setIsOpen(false)} className = 'hidden max-[320px]:inline-block outline-none p-2 max-[320px]:translate-y-0.75 px-4 max-[320px]:px-3'>
                     <Plus size = {17} className = {isOpen ? 'rotate-45' : 'rotate-0'}/>
                 </button>
 
-                <div className = 'flex justify-center items-center gap-2 max-[300px]:hidden'>
+                <div className = 'flex justify-center items-center gap-2 max-[320px]:hidden'>
                     <Link href = '/' className = 'hover:bg-neutral-200/70 outline-none dark:hover:bg-neutral-800 transition-all duration-100 p-2 px-4 max-[300px]:px-3 rounded-md'>
                         <Home size = {17}/>
                     </Link>
@@ -35,10 +35,15 @@ const Dock = () => {
                         <MailIcon size = {17}/>
                     </Link>
 
+                    <Link href = 'https://t.me/teccctt' className = 'hover:bg-neutral-200/70 outline-none dark:hover:bg-neutral-800 transition-all duration-100 p-2 px-4 max-[300px]:px-3 rounded-md'>
+                        <Send size = {17}/>
+                    </Link>
+
+
                     <AnimatedThemeToggler className = 'hover:bg-neutral-200/70 outline-none dark:hover:bg-neutral-800 transition-all duration-100 cursor-pointer p-2 px-4 max-[300px]:px-3 rounded-md'/>
                 </div>
                 
-                <div className = 'max-[300px]:flex hidden flex-col justify-center items-center gap-2'>
+                <div className = 'max-[320px]:flex hidden flex-col justify-center items-center gap-2'>
                 {
                     isOpen &&
                         <>
@@ -54,6 +59,10 @@ const Dock = () => {
 
                             <Link href = 'mailto:sadranafe7@gmail.com' className = 'hover:bg-neutral-200/70 outline-none dark:hover:bg-neutral-800 transition-all duration-100 p-2 px-4 max-[300px]:px-3 rounded-md'>
                                 <MailIcon size = {17}/>
+                            </Link>
+
+                            <Link href = 'https://t.me/teccctt' className = 'hover:bg-neutral-200/70 outline-none dark:hover:bg-neutral-800 transition-all duration-100 p-2 px-4 max-[300px]:px-3 rounded-md'>
+                                <Send size = {17}/>
                             </Link>
 
                             <AnimatedThemeToggler className = 'hover:bg-neutral-200/70 outline-none dark:hover:bg-neutral-800 transition-all duration-100 cursor-pointer p-2 px-4 max-[300px]:px-3 rounded-md'/>
