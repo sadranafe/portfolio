@@ -115,19 +115,44 @@ export const AnimatedThemeToggler = ({
   useEffect(() => {
     if (isControlled) return
 
-    const updateTheme = () => {
-      setInternalIsDark(document.documentElement.classList.contains("dark"))
+    const savedTheme = localStorage.getItem("theme")
+
+    if (savedTheme) {
+      const isDarkTheme = savedTheme === "dark"
+
+      document.documentElement.classList.toggle(
+        "dark",
+        isDarkTheme
+      )
+
+      setInternalIsDark(isDarkTheme)
+    } else {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches
+
+      document.documentElement.classList.toggle(
+        "dark",
+        prefersDark
+      )
+
+      setInternalIsDark(prefersDark)
     }
 
-    updateTheme()
+    const updateTheme = () => {
+      setInternalIsDark(
+        document.documentElement.classList.contains("dark")
+      )
+    }
 
     const observer = new MutationObserver(updateTheme)
+
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["class"],
     })
 
-    return () => observer.disconnect();
+    return () => observer.disconnect()
   }, [isControlled])
 
   const toggleTheme = useCallback(() => {
