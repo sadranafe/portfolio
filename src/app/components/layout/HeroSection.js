@@ -4,9 +4,12 @@ const HeroSection = () => {
     return (
         <>
             <div className = "h-screen w-full text-center flex flex-col justify-center items-center gap-5">
-                <div className = "flex justify-center items-center gap-2">
-                    <div className = "w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                    <p className = "uppercase text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal max-[260px]:text-[11px]">open to work ·<br className = "max-[221px]:inline-block hidden"/> tehran, iran</p>
+                <div className = "flex justify-center items-center gap-2 border p-2 px-4 rounded-full bg-neutral-900/70">
+                    <span className = "relative flex w-2.5 h-2.5">
+                        <span className = "animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                        <span className = "relative inline-flex rounded-full h-2.5 w-2.5 bg-green-600"></span>
+                    </span>
+                    <p className = "uppercase text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal text-[10px]">open to work ·<br className = "max-[221px]:inline-block hidden"/> tehran, iran</p>
                 </div>
 
                 <div>

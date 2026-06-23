@@ -10,7 +10,7 @@ const Dock = () => {
 
     return (
         <>
-            <div onClick = {() => setIsOpen(!isOpen)} className = {`fixed bottom-4 max-[320px]:bottom-2 max-[320px]:left-2 max-[320px]:translate-0 left-1/2 -translate-x-1/2 z-50 ${isOpen ? 'max-[320px]:h-62' : 'max-[320px]:h-10'} max-[320px]:overflow-hidden transition-all w-fit flex max-[320px]:flex-col justify-center items-center gap-2 bg-neutral-100/20 border dark:border-neutral-700 dark:bg-neutral-900/20 backdrop-blur-sm rounded-xl p-2 px-3 max-[320px]:px-0`}>
+            <div onClick = {() => setIsOpen(!isOpen)} className = {`fixed bottom-4 max-[600px]:bottom-2 max-[320px]:left-2 max-[320px]:translate-0 left-1/2 -translate-x-1/2 z-50 ${isOpen ? 'max-[320px]:h-62' : 'max-[320px]:h-10'} max-[320px]:overflow-hidden transition-all w-fit flex max-[320px]:flex-col justify-center items-center gap-2 bg-neutral-100/20 border dark:border-neutral-700 dark:bg-neutral-900/20 backdrop-blur-sm rounded-xl p-2 px-3 max-[320px]:px-0`}>
                 <div className = "flex max-[450px]:hidden justify-start items-center gap-2 border-r pr-2 border-neutral-300 dark:border-neutral-600 w-27">
                     <Image src = '/img/icon.png' alt = "sadra.dev icon" width = {25} height = {25} priority/>
                     <p>sadra.nafe</p>
