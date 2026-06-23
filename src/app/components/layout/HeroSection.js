@@ -4,7 +4,7 @@ const HeroSection = () => {
     return (
         <>
             <div className = "h-screen w-full text-center flex flex-col justify-center items-center gap-5">
-                <div className = "flex justify-center items-center gap-2 border p-2 px-4 rounded-full bg-neutral-900/70">
+                <div className = "flex justify-center items-center gap-2 border p-2 px-4 rounded-full bg-white dark:bg-neutral-900/70">
                     <span className = "relative flex w-2.5 h-2.5">
                         <span className = "animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                         <span className = "relative inline-flex rounded-full h-2.5 w-2.5 bg-green-600"></span>
