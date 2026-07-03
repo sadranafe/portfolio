@@ -1,8 +1,8 @@
+import skills from "../data/skills";
 import Surface from "../shared/Surface";
 import Badge from "../ui/Badge";
 
 const AboutMe = () => {
-    const skills = ['HMTL' , 'CSS' , 'JavaScript' ,'React' , 'Next.js' , 'TailwindCss' , 'ShadcnUI' , 'MagicUI' , 'Axios' , 'REST-API' , 'React-Query' , 'Redux' , 'Context API' , 'Git' , 'Github' , 'Figma' , 'Clean Code']
     return (
         <>
             <Surface className = 'max-[420px]:p-14 max-[370px]:p-10 max-[300px]:p-7'>
