@@ -1,10 +1,11 @@
+import Surface from "../shared/Surface";
 import Badge from "../ui/Badge";
 
 const AboutMe = () => {
     const skills = ['HMTL' , 'CSS' , 'JavaScript' ,'React' , 'Next.js' , 'TailwindCss' , 'ShadcnUI' , 'MagicUI' , 'Axios' , 'REST-API' , 'React-Query' , 'Redux' , 'Context API' , 'Git' , 'Github' , 'Figma' , 'Clean Code']
     return (
         <>
-            <div className = 'bg-neutral-100 dark:bg-neutral-900 p-20 max-[420px]:p-14 max-[370px]:p-10 max-[300px]:p-7 rounded-xl'>
+            <Surface className = 'max-[420px]:p-14 max-[370px]:p-10 max-[300px]:p-7'>
                 <h3 className = 'text-sky-600 text-sm capitalize'>about me</h3>
                 <h2 className = 'font-display text-3xl max-[340px]:text-[25px] font-extrabold'>A bit <br/>about me</h2>
 
@@ -23,7 +24,8 @@ const AboutMe = () => {
                         })
                     }
                 </div>
-            </div>
+
+            </Surface>
         </>
     );
 };

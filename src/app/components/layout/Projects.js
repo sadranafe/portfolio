@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Badge from '../ui/Badge';
+import Surface from '../shared/Surface';
 
 const Projects = () => {
     const projects = [
@@ -37,7 +38,7 @@ const Projects = () => {
     ]
     return (
         <>
-            <section id = 'projects' className = 'bg-neutral-100 dark:bg-neutral-900 p-20 max-[600px]:p-10 max-[380px]:p-5 rounded-xl'>
+            <Surface className = 'max-[600px]:p-10 max-[380px]:p-5'>
                 <h3 className = 'text-sky-600 max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 text-sm capitalize'>featured projects</h3>
                 <h2 className = 'font-display text-3xl max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 max-[340px]:text-[25px] font-extrabold'>projects</h2>
 
@@ -81,7 +82,7 @@ const Projects = () => {
                         })
                     }
                 </div>
-            </section>
+            </Surface>
         </>
     );
 };
