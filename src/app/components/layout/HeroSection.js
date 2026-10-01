@@ -1,4 +1,5 @@
 import Link from "next/link";
+import status from "../data/status";
 
 const HeroSection = () => {
     return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
                     <span className = "animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                     <span className = "relative inline-flex rounded-full h-2.5 w-2.5 bg-green-600"></span>
                 </span>
-                <p className = "uppercase text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal text-[10px]">open to work ·<br className = "max-[221px]:inline-block hidden"/> tehran, iran</p>
+                <p className = "uppercase text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal text-[10px]">{status.label} ·<br className = "max-[221px]:inline-block hidden"/> {status.location}</p>
             </div>
 
             <div>
@@ -16,6 +17,8 @@ const HeroSection = () => {
             </div>
 
             <div className = "w-20 h-0.5 rounded-full bg-sky-500"></div>
+
+            <p className = "max-w-md max-[500px]:max-w-xs text-neutral-400 leading-6 tracking-wider">I build fast, accessible web interfaces with React and Next.js.</p>
 
             <div className = "mt-2 flex max-[300px]:flex-wrap justify-center items-center gap-4">
                 <Link href = '#projects' className = "capitalize rounded-lg py-2.5 px-3 bg-sky-600 hover:bg-sky-700 transition-all text-white">view work</Link>
