@@ -3,8 +3,8 @@ import { comfortaa, syne } from "./fonts";
 import "./globals.css";
 
 export const metadata = {
-  title: "sadra nafe",
-  description: "the portfolio of the sadra nafe.",
+  title: "Sadra Nafe — Frontend Developer",
+  description: "Portfolio of Sadra Nafe, a frontend developer and computer engineering student building modern, user-centered web applications with React and Next.js.",
 };
 
 export default function RootLayout({ children }) {

@@ -11,7 +11,7 @@ const AboutMe = () => {
             <div className = 'mt-10 text-justify leading-6 max-md:leading-7 tracking-widest max-[300px]:tracking-wider'>
                 <p>I’m Sadra — a Frontend Developer and Computer Engineering student focused on building modern, clean, fast and user-centered web applications.</p>
                 <p className = "my-5 max-lg:my-7">I work mainly with <strong className = "text-sky-600 underline underline-offset-4">React</strong> and <strong className = "text-sky-600 underline underline-offset-4">Next.js</strong> and <strong className = "text-sky-600 underline underline-offset-4">TailwindCss</strong> with a strong emphasis on clean UI, responsive design, and scalable architecture.</p>
-                <p>I'm constantly learning, refining my craft, and building projects that challenge me to grow as both a developer and a problem solver. My goal is to work on impactful products and grow as a developer within a strong engineering team.</p>
+                <p>I’m constantly learning, refining my craft, and building projects that challenge me to grow as both a developer and a problem solver. My goal is to work on impactful products and grow as a developer within a strong engineering team.</p>
             </div>
 
             <div className = "flex flex-wrap justify-center items-center gap-5 mt-10">
