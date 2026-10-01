@@ -5,7 +5,7 @@ const ContactMe = () => {
     return (
         <>
             <div id = 'contact' className = 'flex flex-col justify-center items-center gap-3 my-32'>
-                <h3 className = 'text-sky-600 text-sm max-[400px]:text-xs capitalize'>contact me</h3>
+                <p className = 'text-sky-600 text-sm max-[400px]:text-xs capitalize'>contact me</p>
                 <h2 className = 'font-display font-extrabold mb-5 text-6xl max-md:text-5xl max-sm:text-3xl max-[300px]:text-2xl text-center'>Let's work <br/> together</h2>
                 <p className = 'text-center text-neutral-400'>Open to frontend opportunities, collaborations, and <br/> interesting conversations.</p>
 

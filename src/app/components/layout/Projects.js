@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <>
             <Surface id = 'projects' className = 'max-[600px]:p-10 max-[380px]:p-5'>
-                <h3 className = 'text-sky-600 max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 text-sm capitalize'>featured projects</h3>
+                <p className = 'text-sky-600 max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 text-sm capitalize'>featured projects</p>
                 <h2 className = 'font-display text-3xl max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 max-[340px]:text-[25px] font-extrabold'>projects</h2>
 
                 <div className = 'mt-10 grid grid-cols-2 max-[800px]:grid-cols-1 gap-5'>

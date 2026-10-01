@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
         <>
             <Surface className = 'max-[420px]:p-14 max-[370px]:p-10 max-[300px]:p-7'>
-                <h3 className = 'text-sky-600 text-sm capitalize'>about me</h3>
+                <p className = 'text-sky-600 text-sm capitalize'>about me</p>
                 <h2 className = 'font-display text-3xl max-[340px]:text-[25px] font-extrabold'>A bit <br/>about me</h2>
 
                 <div className = 'mt-10 text-justify leading-6 max-md:leading-7 tracking-widest max-[300px]:tracking-wider'>
