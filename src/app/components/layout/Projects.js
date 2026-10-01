@@ -41,8 +41,8 @@ const Projects = () => {
                                 <hr className = 'text-neutral-200 dark:text-neutral-800 my-5'/>
 
                                 <div>
-                                    <Link href = {proj.github} target = '_blank' className = 'text-sky-600 mr-3 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Github</Link>
-                                    { proj.live && <Link href = {proj.live} className = 'text-sky-600 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Live</Link> }
+                                    <Link href = {proj.github} target = '_blank' rel = 'noopener noreferrer' className = 'text-sky-600 mr-3 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Github</Link>
+                                    { proj.live && <Link href = {proj.live} target = '_blank' rel = 'noopener noreferrer' className = 'text-sky-600 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Live</Link> }
                                 </div>
                             </div>
                         )

@@ -25,8 +25,10 @@ const Dock = () => {
 
             {
                 links.map((link) => {
+                    const external = link.href.startsWith('http')
+
                     return(
-                        <Link key = {link.href} href = {link.href} aria-label = {link.label} className = 'hover:bg-neutral-200/60 outline-none dark:hover:bg-neutral-800/40 transition-all duration-100 p-2 px-4 max-[300px]:px-3 rounded-md'>
+                        <Link key = {link.href} href = {link.href} aria-label = {link.label} target = {external ? '_blank' : undefined} rel = {external ? 'noopener noreferrer' : undefined} className = 'hover:bg-neutral-200/60 outline-none dark:hover:bg-neutral-800/40 transition-all duration-100 p-2 px-4 max-[300px]:px-3 rounded-md'>
                             {link.icon}
                         </Link>
                     )
