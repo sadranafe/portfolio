@@ -24,7 +24,7 @@ const projects = [
         featured : false,
         year : 2023,
         title : 'quiz app',
-        desc : 'A modern admin panel built with Next.js. This project is a real-world migration from a traditional React SPA to Next.js, leveraging Server Components, Client Components, and best practices used in production teams.',
+        desc : 'An interactive quiz app with a 30-second timer per question, locked-in answers, and instant feedback on each selection. Tracks progress as you go and scores the run as a final percentage, with light and dark themes throughout.',
         tech : ['Vite' , 'React' , 'TailwindCss' , 'Axios'],
         github : 'https://github.com/sadranafe/Quiz-app',
         live: 'https://quizappsn.vercel.app',

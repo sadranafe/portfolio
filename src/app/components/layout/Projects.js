@@ -11,13 +11,13 @@ const Projects = () => {
 
             <div className = 'mt-10 grid grid-cols-2 max-[800px]:grid-cols-1 gap-5'>
                 {
-                    projects.map((proj , index) => {
+                    projects.map((proj) => {
                         return(
-                            <div key = {index} className = 'bg-white/45 dark:bg-black/45 shadow-lg dark:shadow-none shadow-neutral-200/30 rounded-2xl p-10 max-[500px]:p-7 max-[900px]:p-8'>
-                                <div className = 'flex relative justify-between items-center'>
-                                    <p className = 'text-neutral-400'>{proj?.year}</p>
+                            <div key = {proj.id} className = 'bg-white/45 dark:bg-black/45 shadow-lg dark:shadow-none shadow-neutral-200/30 rounded-2xl p-10 max-[500px]:p-7 max-[900px]:p-8'>
+                                <div className = 'flex justify-between items-center'>
+                                    <p className = 'text-neutral-400'>{proj.year}</p>
                                     {
-                                        proj?.featured && <p className = 'text-sky-500 max-[250px]:absolute max-[250px]:bottom-full max-[250px]:-right-5 bg-sky-100 dark:bg-sky-900/30 rounded-lg p-1 px-3 uppercase text-[10px] w-fit'>featured</p>
+                                        proj.featured && <p className = 'text-sky-500 bg-sky-100 dark:bg-sky-900/30 rounded-lg p-1 px-3 uppercase text-[10px] w-fit'>featured</p>
                                     }
                                 </div>
 
@@ -26,10 +26,10 @@ const Projects = () => {
                                 </div>
 
                                 <div>
-                                    <p className = 'text-neutral-400 text-justify leading-5 tracking-wider max-[350px]:text-[10px]'>{proj?.desc}</p>
+                                    <p className = 'text-neutral-400 text-justify leading-5 tracking-wider max-[350px]:text-[10px]'>{proj.desc}</p>
                                     <div className = 'flex flex-wrap justify-start items-center gap-3 mt-5'>
                                         {
-                                            proj?.tech.map((tech , index) => {
+                                            proj.tech.map((tech , index) => {
                                                 return(
                                                     <Badge key = {index} className = 'bg-neutral-50 dark:bg-neutral-900'>{tech}</Badge>
                                                 )
@@ -41,8 +41,8 @@ const Projects = () => {
                                 <hr className = 'text-neutral-200 dark:text-neutral-800 my-5'/>
 
                                 <div>
-                                    <Link href = {proj?.github} target = '_blank' className = 'text-sky-600 mr-3 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Github</Link>
-                                    { proj?.live && <Link href = {proj.live} className = 'text-sky-600 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Live</Link> }
+                                    <Link href = {proj.github} target = '_blank' className = 'text-sky-600 mr-3 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Github</Link>
+                                    { proj.live && <Link href = {proj.live} className = 'text-sky-600 outline-none hover:bg-sky-100/70 dark:hover:bg-sky-900/20 transition-all p-2 px-3 rounded-md'>Live</Link> }
                                 </div>
                             </div>
                         )
