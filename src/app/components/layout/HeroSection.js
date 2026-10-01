@@ -9,7 +9,8 @@ const HeroSection = () => {
                     <span className = "animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
                     <span className = "relative inline-flex rounded-full h-2.5 w-2.5 bg-green-600"></span>
                 </span>
-                <p className = "uppercase text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal text-[10px]">{status.label} ·<br className = "max-[221px]:inline-block hidden"/> {status.location}</p>
+                {/* <p className = "uppercase text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal text-[10px]">{status.label} ·<br className = "max-[221px]:inline-block hidden"/> {status.location}</p> */}
+                <p className = "capitalize text-sky-600 font-semibold tracking-widest max-[500px]:tracking-normal text-[10px]">{status.label}</p>
             </div>
 
             <div>
