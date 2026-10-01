@@ -8,7 +8,7 @@ const Manifesto = () => {
 
             <div className = "mx-auto max-w-4xl px-6 max-[300px]:px-3 max-xl:text-center max-xl:max-w-full">
                 <div className = "space-y-4">
-                    <h2 className = "manifesto-title font-extrabold bg-linear-to-r from-sky-100 via-blue-300/60 to-sky-700 bg-clip-text text-transparent font-display leading-tight text-5xl max-lg:text-[39px]">
+                    <h2 className = "manifesto-title font-extrabold bg-linear-to-r from-sky-700 via-blue-500 to-sky-300 dark:from-sky-100 dark:via-blue-300/60 dark:to-sky-700 bg-clip-text text-transparent font-display leading-tight text-5xl max-lg:text-[39px]">
                         Clean code.
                         <br />
                         Thoughtful interfaces.

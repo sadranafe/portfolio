@@ -13,8 +13,8 @@ const ContactMe = () => {
                     <Link href = 'mailto:sadranafe7@gmail.com' className = 'bg-sky-600 hover:bg-sky-700/90 capitalize transition-all rounded-md p-3 px-4 text-white'>say hello</Link>
 
                     <div className = 'mt-10 flex justify-center items-center gap-3'>
-                        <Link href = 'https://www.instagram.com/its.sadra_/' className = 'text-neutral-400 capitalize hover:text-white transition-all'>instagram</Link>
-                        <Link href = 'https://github.com/sadranafe' className = 'text-neutral-400 capitalize hover:text-white transition-all'>github</Link>
+                        <Link href = 'https://www.instagram.com/its.sadra_/' className = 'text-neutral-400 capitalize hover:text-sky-600 transition-all'>instagram</Link>
+                        <Link href = 'https://github.com/sadranafe' className = 'text-neutral-400 capitalize hover:text-sky-600 transition-all'>github</Link>
                     </div>
                 </div>
             </div>
