@@ -10,9 +10,9 @@ const Experience = () => {
     const [openId , setOpenId] = useState(experience.find((job) => job.current)?.id ?? null)
 
     return (
-        <Surface id = 'experience' className = 'mt-5 max-[420px]:p-14 max-[370px]:p-10 max-[300px]:p-7'>
-            <p className = 'text-sky-600 text-sm capitalize'>experience</p>
-            <h2 className = 'font-display text-3xl max-[340px]:text-[25px] font-extrabold'>Where I work</h2>
+        <Surface id = 'experience' className = 'mt-5 max-[620px]:p-10 max-[380px]:p-5'>
+            <p className = 'text-sky-600 max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 text-sm capitalize'>experience</p>
+            <h2 className = 'font-display text-3xl max-[600px]:pl-10 max-[420px]:pl-4 max-[300px]:pl-2 max-[340px]:text-[25px] font-extrabold'>Where I work</h2>
 
             <div className = 'mt-10 flex flex-col gap-5'>
                 {
